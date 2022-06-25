@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/morysol/goit-react-hw-02-phonebook/static/css/main.86e7de4c.css",
-    "main.js": "/morysol/goit-react-hw-02-phonebook/static/js/main.df9f1c95.js",
-    "index.html": "/morysol/goit-react-hw-02-phonebook/index.html",
-    "main.86e7de4c.css.map": "/morysol/goit-react-hw-02-phonebook/static/css/main.86e7de4c.css.map",
-    "main.df9f1c95.js.map": "/morysol/goit-react-hw-02-phonebook/static/js/main.df9f1c95.js.map"
+    "main.css": "/goit-react-hw-02-phonebook/static/css/main.86e7de4c.css",
+    "main.js": "/goit-react-hw-02-phonebook/static/js/main.df9f1c95.js",
+    "index.html": "/goit-react-hw-02-phonebook/index.html",
+    "main.86e7de4c.css.map": "/goit-react-hw-02-phonebook/static/css/main.86e7de4c.css.map",
+    "main.df9f1c95.js.map": "/goit-react-hw-02-phonebook/static/js/main.df9f1c95.js.map"
   },
   "entrypoints": [
     "static/css/main.86e7de4c.css",
