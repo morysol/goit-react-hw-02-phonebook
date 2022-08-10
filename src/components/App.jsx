@@ -1,9 +1,9 @@
 import React from 'react';
 import { nanoid } from 'nanoid';
 
-import ContactsList from './ContactsList/ContactsList';
+import { ContactsList } from './ContactsList/ContactsList';
 import ContactForm from './ContactForm/ContactForm';
-import SearchFilter from './SearchFilter/SearchFilter';
+import { SearchFilter } from './SearchFilter/SearchFilter';
 
 class App extends React.Component {
   state = {
@@ -72,8 +72,11 @@ class App extends React.Component {
           filter={this.state.filter}
         ></SearchFilter>
         <ContactsList
-          contacts={this.state.contacts}
-          filter={this.state.filter}
+          // contacts={this.state.contacts}
+          // filter={this.state.filter}
+          filteredContacts={this.state.contacts.filter(contact =>
+            contact.name.toLowerCase().includes(this.state.filter.toLowerCase())
+          )}
           removeContact={this.onDeleteContact}
         ></ContactsList>
       </div>
