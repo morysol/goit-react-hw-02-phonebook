@@ -35,7 +35,7 @@ import { ContactsListItem } from '../ContactsListItem/ContactsListItem';
 
 // export default ContactsList;
 
-export const ContactsList = props => {
+export const ContactsList = ({ filteredContacts, removeContact }) => {
   // console.log(props.filteredContacts);
   return (
     <div>
@@ -52,13 +52,13 @@ export const ContactsList = props => {
               ></ContactsListItem>
             )
         )} */}
-        {props.filteredContacts.map(contact => (
+        {filteredContacts.map(contact => (
           <ContactsListItem
             key={contact.id}
             id={contact.id}
             name={contact.name}
             number={contact.number}
-            removeContact={props.removeContact}
+            removeContact={removeContact}
           />
         ))}
       </ul>
@@ -67,6 +67,6 @@ export const ContactsList = props => {
 };
 
 ContactsList.propTypes = {
-  contacts: PropTypes.arrayOf(PropTypes.object.isRequired),
-  filter: PropTypes.string.isRequired,
+  filteredContacts: PropTypes.array.isRequired,
+  removeContact: PropTypes.func.isRequired,
 };
